@@ -268,11 +268,6 @@ a:active {
   display: none;
 }
 
-/* Slider */
-.slick-loading .slick-list {
-  background: #fff url("../img/ajax-loader.gif") center center no-repeat;
-}
-
 /* Icons */
 @font-face {
   font-family: "slick";

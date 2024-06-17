@@ -1,10 +1,10 @@
 //test bot
-// const TOKEN = '7384728233:AAEqn5NrLORpp-CpywQkperU_Rk0YS7exLM';
-// const CHAT_ID = '951582541';
+const TOKEN = '7384728233:AAEqn5NrLORpp-CpywQkperU_Rk0YS7exLM';
+const CHAT_ID = '951582541';
 
 // TG BOT START
-const TOKEN = '7363871608:AAFrCmY9oX2-fYIfEfGIWWiiaRU9BiylqCg';
-const CHAT_ID = '-1002227620906';
+// const TOKEN = '7363871608:AAFrCmY9oX2-fYIfEfGIWWiiaRU9BiylqCg';
+// const CHAT_ID = '-1002227620906';
 const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
 
