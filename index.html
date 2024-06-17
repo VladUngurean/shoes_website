@@ -9,12 +9,56 @@
 	<title>Летние Пляжные Сланцы</title>
 	<link rel="stylesheet" href="resurces/landings/css/jquery.fancybox.min.css">
 	<link rel="stylesheet" type="text/css" href="resurces/landings/css/style.css">
-	<!-- Обязательные скрипты на наших лендах -->
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-	<!-- <script type="text/javascript" src="/static/js/jquery.min.js"></script> -->
 
-	<!-- LT code insertion -->
-	<!-- /LT code insertion -->
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+	<script defer src="resurces/landings/js/jquery.fancybox.min.js"></script>
+	<script defer src="resurces/landings/js/custom.js"></script>
+	<script defer src="form-req.js"></script>
+
+	<!-- Meta Pixel Code -->
+	<script>
+		!function (f, b, e, v, n, t, s) {
+			if (f.fbq) return; n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+			n.queue = []; t = b.createElement(e); t.async = !0;
+			t.src = v; s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '340633925725184');
+		fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=340633925725184&ev=PageView&noscript=1" /></noscript>
+	<!-- End Meta Pixel Code -->
+
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function (m, e, t, r, i, k, a) {
+			m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+			m[i].l = 1 * new Date();
+			for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+			k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+		})
+			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+		ym(97572838, "init", {
+			clickmap: true,
+			trackLinks: true,
+			accurateTrackBounce: true,
+			webvisor: true
+		});
+	</script>
+	<noscript>
+		<div><img src="https://mc.yandex.ru/watch/97572838" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
+	<!-- /Yandex.Metrika counter -->
 </head>
 
 <body>
@@ -137,44 +181,24 @@
 				<div class="info-text">
 					<p>
 						<b>Преимущества Летних Сланцев</b> <br>
-
-
 						1. Универсальность: <br>
-
 						- Подходят для любого летнего наряда, будь то пляжный сарафан или легкие шорты. <br>
-
 						- Прекрасно сочетаются с пляжными платьями, шортами и даже джинсами. <br>
-
 						2. Комфорт и Удобство: <br>
-
 						- Изготовлены из мягкого и прочного материала, обеспечивающего комфорт. <br>
-
 						- Идеальны для прогулок в теплые летние дни и отдыха на пляже. <br>
-
 						- Подходят для душа или бассейна, легко моются и долговечны. <br>
-
 						3. Практичность: <br>
-
 						- Отличный выбор для дачи или повседневной носки. <br>
-
 						- Удобны для прогулок по городу и подойдут для подростков, как девочек, так и мальчиков. <br>
-
 						4. Вариативность размеров: <br>
-
 						- Доступны в различных размерах, от 38 до 41 и более, что позволяет каждому найти подходящую пару. <br>
-
 						- Благодаря гибкости, подойдут для людей с широкой ногой. <br>
-
 						5. Стиль и Долговечность: <br>
-
 						- Сланцы стильные и функциональные, добавят легкости и непринужденности в ваш образ. <br>
-
 						- Просты в уходе и долговечны, что делает их идеальными для различных условий, включая роддом. <br>
-
 						6. Функциональность: <br>
-
 						- Подходят для различных активностей: прогулки по городу, отдых на пляже, походы в баню и сауну. <br>
-
 						- Идеальны для мужчин, ищущих удобную обувь для пляжа или дачи. <br>
 					</p>
 				</div>
@@ -228,10 +252,6 @@
 							<img src="product/8.jpg" alt="">
 							<div class="galery-cover"><span class="icon-plus">+</span></div>
 						</a>
-						<!-- <a href="resurces/landings/img/gallery/1/8.jpg" class="galery__item galery__item-9" data-fancybox="g1">
-							<img src="resurces/landings/img/gallery/1/8.jpg" alt="">
-							<div class="galery-cover"><span class="icon-plus">+</span></div>
-						</a> -->
 					</div>
 
 				</div>
@@ -239,153 +259,6 @@
 		</section>
 		<section class="product-content">
 			<div class="container">
-				<!-- 
-				<div class="product js-prod" id="top-order">
-
-					<div class="product-title">
-						<h2>
-							Женские шлепанцы Ecco <span>7592</span>
-						</h2>
-					</div>
-
-					<div class="product-wrap">
-
-						<div class="product-galery">
-							<div class="product-galery__wrap curent-order" data-id="208">
-								<div class="prod-galery-slider js-slid">
-									<a href="resurces/landings/img/catalogue/7589/1.jpg" class="prod-galery-slider__item" data-fancybox="g2"><img src="resurces/landings/img/catalogue/7589/1.jpg" alt=""></a>
-									<a href="resurces/landings/img/catalogue/7589/2.jpg" class="prod-galery-slider__item" data-fancybox="g2"><img src="resurces/landings/img/catalogue/7589/2.jpg" alt=""></a>
-									<a href="resurces/landings/img/catalogue/7589/3.jpg" class="prod-galery-slider__item" data-fancybox="g2"><img src="resurces/landings/img/catalogue/7589/3.jpg" alt=""></a>
-									<a href="resurces/landings/img/catalogue/7589/4.jpg" class="prod-galery-slider__item" data-fancybox="g2"><img src="resurces/landings/img/catalogue/7589/4.jpg" alt=""></a>
-								</div>
-								<button class="slider-btn slider-btn-l sl-l-1"></button>
-								<button class="slider-btn slider-btn-r sl-r-1"></button>
-							</div>
-						</div>
-
-						<div class="product-info">
-							<ul class="product-info-list">
-								<li class="product-info-list__item">
-									<span>Сезон: </span>
-									<span>весна - лето </span>
-								</li>
-								<li class="product-info-list__item">
-									<span>Модель: </span>
-									<span>ECCO FLOWT LX W ZW6179</span>
-								</li>
-								<li class="product-info-list__item">
-									<span>Верх: </span>
-									<span>натуральная телячья кожа</span>
-								</li>
-								<li class="product-info-list__item">
-									<span>Материал подошвы: </span>
-									<span>полиуретан</span>
-								</li>
-								<li class="product-info-list__item">
-									<span>Вид товара: </span>
-									<span>шлепанцы</span>
-								</li>
-								<li class="product-info-list__item">
-									<span>Страна: </span>
-									<span>Словакия</span>
-								</li>
-								<li class="product-info-list__item">
-									<span>Стиль: </span>
-									<span>ежедневный (casual)</span>
-								</li>
-								<li class="product-info-list__item">
-									<span>Бренд: </span>
-									<span>ECCO</span>
-								</li>
-								<li class="product-info-list__item">
-									<span>Каблук:</span>
-									<span>ниже 30мм</span>
-								</li>
-								<li class="product-info-list__item">
-									<span>Цвет: </span>
-									<span>розовый</span>
-								</li>
-							</ul>
-							<div class="prod-sizes">
-								<div class="prod-sizes__title">
-									<h3>
-										Выберите размер:
-									</h3>
-								</div>
-								<ul class="product-info-size">
-									<li class="product-info-size__item active-size">
-										<span>36 </span><span>(23см)</span>
-									</li>
-									<li class="product-info-size__item">
-										<span>37 </span><span>(23,5см)</span>
-									</li>
-									<li class="product-info-size__item">
-										<span>38 </span><span>(24см)</span>
-									</li>
-									<li class="product-info-size__item">
-										<span>39 </span><span>(25см)</span>
-									</li>
-									<li class="product-info-size__item">
-										<span>40</span><span>(26см)</span>
-									</li>
-								</ul>
-							</div>
-
-
-						</div>
-
-						<div class="product-order">
-
-							<div class="product-order__price">
-								<div class="prod-sale">sale -60%</div>
-								<div class="prod-price">
-									<div class="prod-price__old">
-										<prod class="oldproductsum"></prod>
-									</div>
-									<div class="prod-price__new js-price">
-										<prod class="productsum"></prod>
-									</div>
-								</div>
-							</div>
-
-							<div class="product-order__form">
-								<div class="prod-form">
-									<form class="order-form" namefff="form3" action="/success/" method="POST">
-										<div class="form-group">
-											<input type="text" class="form-control" name="name" id="name_first" placeholder="Имя" required>
-										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" name="phone" id="phone" placeholder="Телефон" required>
-										</div>
-										<select name="country" class="countryselect" style="display: none;">
-											<option value='UA'>Украина</option>
-										</select>
-										<input type="hidden" name="productsum" class="productsum" value="1 руб." />
-										<input type="hidden" name="delivery" value="0 руб." />
-										<input type="hidden" name="totalsum" class="productsum" value="1 руб." />
-										<input type="hidden" name="user" value="1" />
-										<input type="hidden" name="address" value="Уточнить у покупателя" />
-
-										<div class="form-group">
-											<button class="my-btn" type="submit" onclick="checkFields(event, this);">Заказать</button>
-										</div>
-
-										<div class="header-link-subtitle">
-											<a data-fancybox href="https://www.youtube.com/watch?v=3dSneo91AuQ&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0">Посмотреть видео</a>
-										</div>
-
-									</form>
-
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
- -->
-
 				<div class="product js-prod" id="top-order">
 
 					<div class="product-title">
@@ -469,6 +342,27 @@
 									<li class="product-info-size__item">
 										<span>40</span><span>(26см)</span>
 									</li>
+									<li class="product-info-size__item">
+										<span>41</span><span>(27см)</span>
+									</li>
+									<li class="product-info-size__item">
+										<span>42</span><span>(28см)</span>
+									</li>
+									<li class="product-info-size__item">
+										<span>43</span><span>(29см)</span>
+									</li>
+									<li class="product-info-size__item">
+										<span>44</span><span>(29,5см)</span>
+									</li>
+									<li class="product-info-size__item">
+										<span>45</span><span>(30см)</span>
+									</li>
+									<li class="product-info-size__item">
+										<span>46</span><span>(30,5см)</span>
+									</li>
+									<li class="product-info-size__item">
+										<span>47</span><span>(31см)</span>
+									</li>
 								</ul>
 							</div>
 
@@ -491,17 +385,16 @@
 
 							<div class="product-order__form">
 								<div class="prod-form">
-									<form class="order-form" namefff="form3" action="" method="get">
-										<input type="hidden" name="" id="tapkiSize" value="">
+									<form id="placeOrderForm" class="order-form" namefff="form3" action="" method="get">
+										<input id="productName" type="hidden" name="product_name" value="Летние Пляжные Сланцы">
+										<input type="hidden" name="" id="tapkiSize" value="Nu a ales">
 										<div class="form-group">
-											<input type="text" class="form-control" name="name" id="name_first" placeholder="Имя" required>
+											<input id="userName" class="form-input" type="text" name="user_name " pattern="[a-zA-Zа-яА-Я\s]+" placeholder="Введите Ваше имя" required minlength=" 3" maxlength="25" autocomplete="off">
 										</div>
+
 										<div class="form-group">
-											<input type="text" class="form-control" name="phone" id="phone" placeholder="Телефон" required>
+											<input id="phone" class="form-input" type="tel" name="user_phone" oninput="checkInput()" placeholder="Введите телефон" required autocomplete="off">
 										</div>
-										<!-- <select name="country" class="countryselect" style="display: none;">
-											<option value='UA'>Украина</option>
-										</select> -->
 
 										<div class="form-group">
 											<button class="my-btn" type="submit">Заказать</button>
@@ -523,100 +416,44 @@
 
 			</div>
 		</section>
+		<script>
+			function extractAndSetValues(element) {
+				// Get the span elements inside the clicked or active-size element
+				const spans = element.querySelectorAll('span');
 
-		<!-- <section class="galery-content-1">
-			<div class="container">
-				<div class="galery-1">
+				// Extract the text content from the spans
+				let sizeValue = spans[0].textContent.trim();
+				let sizeInCm = spans[1].textContent.trim();
 
-					<div class="galery-1-wrap">
-						<a href="resurces/landings/img/gallery/2/1.jpg" class="galery__item" data-fancybox="g5">
-							<img src="resurces/landings/img/gallery/2/1.jpg" alt="">
-							<div class="galery-cover galery-cover-powder"><span class="icon-plus">+</span></div>
-						</a>
-						<a href="resurces/landings/img/gallery/2/2.jpg" class="galery__item" data-fancybox="g5">
-							<img src="resurces/landings/img/gallery/2/2.jpg" alt="">
-							<div class="galery-cover galery-cover-powder"><span class="icon-plus">+</span></div>
-						</a>
-						<a href="resurces/landings/img/gallery/2/3.jpg" class="galery__item" data-fancybox="g5">
-							<img src="resurces/landings/img/gallery/2/3.jpg" alt="">
-							<div class="galery-cover galery-cover-powder"><span class="icon-plus">+</span></div>
-						</a>
-						<a href="resurces/landings/img/gallery/2/4.jpg" class="galery__item" data-fancybox="g5">
-							<img src="resurces/landings/img/gallery/2/4.jpg" alt="">
-							<div class="galery-cover galery-cover-powder"><span class="icon-plus">+</span></div>
-						</a>
-					</div>
+				// Combine the values as needed, for example, as "36 (23см)"
+				let combinedValue = sizeValue + ' ' + sizeInCm;
 
-					<div class="galery-1-wrap">
-						<a href="resurces/landings/img/gallery/2/big.jpg" class="galery__item" data-fancybox="g5">
-							<img src="resurces/landings/img/gallery/2/big.jpg" alt="">
-							<div class="galery-cover galery-cover-powder"><span class="icon-plus">+</span></div>
-						</a>
-					</div>
+				// Set the combined value to the hidden input
+				const hiddenInput = document.getElementById('tapkiSize');
+				hiddenInput.value = combinedValue;
+			}
 
-				</div>
-			</div>
-		</section> -->
-		<!-- <div class="e-block"></div> -->
+			// Initial call to set the value for the active-size element
+			// const activeSizeElement = document.querySelector('.product-info-size__item.active-size');
+			// if (activeSizeElement) {
+			// 	extractAndSetValues(activeSizeElement);
+			// }
 
-		<!-- <section class="about-content">
-			<div class="container">
-				<div class="about">
-					<div class="about__title">
-						<h2>о брендe ecco</h2>
-					</div>
+			// Add click event listeners to all li elements
+			const sizeItems = document.querySelectorAll('.product-info-size__item');
+			sizeItems.forEach(item => {
+				item.addEventListener('click', function () {
+					// Remove active-size class from all items
+					sizeItems.forEach(i => i.classList.remove('active-size'));
 
-					<div class="about__text">
-						<p>
-							Компания Ecco была основана датским предпринимателем Карлом Тусби в 1963 году. С самого начала
-							целью Ecco было создание комфортной обуви, с максимально возможным применением инновационных
-							технологий. Дизайн основывался на скандинавских традициях, то есть был минималистичным и подчас
-							уместным под всевозможные мероприятия. В модельном ряду Ecco самая разная обувь — как классическая,
-							в более или менее деловом (официальном) стиле, так и повседневная.
-						</p>
-						<p>
-							Обувь Ecco отличается удобством, хорошо пропускает воздух и практически не промокает. В интернете
-							встречаются самые разные отзывы; большинство из них, однако, все-таки положительны. Многие отмечают
-							удобство и комфорт, а также неимоверную износостойкость.
-						</p>
-					</div>
+					// Add active-size class to the clicked item
+					item.classList.add('active-size');
 
-				</div>
-			</div>
-		</section>
-		<section class="galery-content-2">
-			<div class="container">
-				<div class="galery-2">
-
-					<div class="galery-2-wrap">
-						<a href="resurces/landings/img/gallery/3/big.jpg" class="galery__item" data-fancybox="g6">
-							<img src="resurces/landings/img/gallery/3/big.jpg" alt="">
-							<div class="galery-cover galery-cover-powder"><span class="icon-plus">+</span></div>
-						</a>
-					</div>
-
-					<div class="galery-2-wrap">
-						<a href="resurces/landings/img/gallery/3/1.jpg" class="galery__item" data-fancybox="g6">
-							<img src="resurces/landings/img/gallery/3/1.jpg" alt="">
-							<div class="galery-cover galery-cover-powder"><span class="icon-plus">+</span></div>
-						</a>
-						<a href="resurces/landings/img/gallery/3/2.jpg" class="galery__item" data-fancybox="g6">
-							<img src="resurces/landings/img/gallery/3/2.jpg" alt="">
-							<div class="galery-cover galery-cover-powder"><span class="icon-plus">+</span></div>
-						</a>
-						<a href="resurces/landings/img/gallery/3/3.jpg" class="galery__item" data-fancybox="g6">
-							<img src="resurces/landings/img/gallery/3/3.jpg" alt="">
-							<div class="galery-cover galery-cover-powder"><span class="icon-plus">+</span></div>
-						</a>
-						<a href="resurces/landings/img/gallery/3/4.jpg" class="galery__item" data-fancybox="g6">
-							<img src="resurces/landings/img/gallery/3/4.jpg" alt="">
-							<div class="galery-cover galery-cover-powder"><span class="icon-plus">+</span></div>
-						</a>
-					</div>
-
-				</div>
-			</div>
-		</section> -->
+					// Extract and set values for the clicked item
+					extractAndSetValues(item);
+				});
+			});
+		</script>
 		<section class="whay-how">
 			<div class="container">
 
@@ -875,13 +712,6 @@
 
 				</div>
 
-
-
-
-
-
-
-
 				<div class="footer">
 					<div class="footer__title">
 						<h2>
@@ -976,20 +806,6 @@
 			</div>
 		</div>
 	</div>
-
-	<!-- <script src="resurces/assets/js/libs/jquery.min.js"></script> -->
-	<!-- <script src="resurces/assets/js/jquery.validate.min.js"></script> -->
-	<!-- <script src="resurces/assets/js/validate-script.js"></script> -->
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-	<script src="resurces/landings/js/jquery.fancybox.min.js"></script>
-	<!-- <script src="resurces/landings/js/rmodal.min.js"></script> -->
-	<script src="resurces/landings/js/custom.js"></script>
-	<!-- <script src="resurces/landings/js/main-um.js"></script> -->
-
-
-	<!-- LeadTrade domonetization -->
-	<!-- /LeadTrade domonetization -->
 </body>
 
 </html>

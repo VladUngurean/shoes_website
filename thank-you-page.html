@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="resurces/landings/css/style.min.css" />
+  <title>Спасибо за заказ</title>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '340633925725184');
+    fbq('track', 'Lead')
+    fbq('track', 'Purchase', {
+      value: 390,
+      currency: 'MDL',
+    });
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=340633925725184&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+
+</head>
+
+<body>
+  <div id="wrapper" class="wrapper">
+    <main class="page">
+      <div class="page__container">
+        <div class="thank-you-massage">
+          <div class="check">
+            <svg width="70px" height="70px" viewBox="0 0 133 133" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="check-group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <circle id="filled-circle" fill="#07b481" cx="66.5" cy="66.5" r="54.5" />
+                <circle id="white-circle" fill="#FFFFFF" cx="66.5" cy="66.5" r="55.5" />
+                <circle id="outline" stroke="#07b481" stroke-width="4" cx="66.5" cy="66.5" r="54.5" />
+                <polyline id="check" stroke="#FFFFFF" stroke-width="5.5" points="41 70 56 85 92 49" />
+              </g>
+            </svg>
+          </div>
+          <p class="massage__text">
+            <b>Спасибо за заказ!</b> <br />
+            Наши менеджеры уже скоро с вами свяжутся для уточнения деталей <br />
+            Хорошего дня!
+          </p>
+          <p>
+          <p style="font-size: 20px;"><b>Смотрите и другие наши предложения проходя по ссылке</b>:<a class="next-site" href="https://bazin.codeshop.md">Наши Товары</a></p>
+          </p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    function startTimer(duration, callback) {
+      let timer = duration;
+      const interval = setInterval(() => {
+        timer--;
+        console.log(timer); // You can replace this with any action you want
+        if (timer <= 0) {
+          clearInterval(interval);
+          callback();
+        }
+      }, 1000);
+    }
+
+    function myFunction() {
+      location.href = "https://codeshop.md/";
+    }
+
+    // Start the timer with a duration of 10 seconds and the callback function
+    startTimer(3, myFunction);
+  </script>
+
+</body>
+
+</html>
