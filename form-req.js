@@ -2,17 +2,14 @@
 const TOKEN = '7384728233:AAEqn5NrLORpp-CpywQkperU_Rk0YS7exLM';
 const CHAT_ID = '951582541';
 
-// TG BOT START
-// const TOKEN = '7363871608:AAFrCmY9oX2-fYIfEfGIWWiiaRU9BiylqCg';
-// const CHAT_ID = '-1002227620906';
 const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
 
 // // //TRELLO BOT START
 
-const TRELLO_API_KEY = 'd0827a93b81c8ee3d2a8d429f03ee94d';
-const TRELLO_API_TOKEN = 'ATTAe13c971304ee5aef49bc60bee64f4f831430c37a07036304d6ace681bbbd4a078E6013ED';
-const TRELLO_BOARD_ID = 'j9qwCoBc';
+const TRELLO_API_KEY = '';
+const TRELLO_API_TOKEN = '';
+const TRELLO_BOARD_ID = '';
 const TRELLO_LIST_NAME = 'Заявки'; // Имя списка, куда нужно добавить карточку на Trello
 
 //form variables
